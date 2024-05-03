@@ -2,14 +2,15 @@
 
 Pitch para a disciplina de Banco de Dados 1 
 
-Professor: Lucas Rodolfo Celestino De Farias
+*Professor*: Lucas Rodolfo Celestino De Farias
 
-Aunos: José Carlos Barros, Antonio Vital, Antônio Castelão
+*Alunos*: José Carlos Barros, Antonio Vital, Antônio Castelão
 
 ### Roteiro do pitch
 
 #### 1. Missão e Visão
 **Missão**: A EducaLivros tem como missão liderar o mercado de distribuição de conhecimento, conectando pessoas ao mundo literário e educacional através de tecnologia inovadora. A empresa busca tornar o aprendizado acessível e prazeroso para todos.  
+
 **Visão**: A visão da EducaLivros é expandir sua oferta de produtos e serviços educacionais, desenvolvendo parcerias com escolas e universidades para facilitar o acesso a recursos educativos. A empresa também planeja incorporar tecnologias emergentes para a recomendação personalizada de livros e materiais de estudo.
 
 #### 2. Funcionalidades do Sistema de Banco de Dados
@@ -25,9 +26,10 @@ Aunos: José Carlos Barros, Antonio Vital, Antônio Castelão
 O modelo de banco de dados da EducaLivros reflete as funcionalidades descritas acima e é organizado em várias tabelas principais:
 
 - **Cliente**: Armazena informações dos clientes, como ID, nome, sobrenome, telefone, e-mail, CPF.
+- **Endereço**: Armazena as informações referente ao endereço do cliente como: rua, cep, bairoo, etc.
 - **Livro**: Contém detalhes dos livros, incluindo ID do livro, ID do autor (chave estrangeira), nome do livro, descrição, data de publicação, e informações de estoque.
+- **Papelaria**: Contém detalhes dos itens vendidos na área de papelaria da livraria como: tipo, marca, etc.
 - **Autor**: Registra informações sobre os autores, incluindo ID, nome e sobrenome.
 - **Pedido**: Gerencia os pedidos feitos pelos clientes, incluindo ID do pedido, data, valor total, e a chave estrangeira do cliente e do carrinho de compras.
 - **Pagamento**: Lida com as transações de pagamento, armazenando ID do pagamento, forma de pagamento, data, montante, e a chave estrangeira do pedido correspondente.
 
-Esse modelo suporta a complexidade das operações da EducaLivros e permite uma interação eficiente entre diferentes partes do sistema, garantindo que todas as funcionalidades sejam executadas de maneira integrada e eficaz.
